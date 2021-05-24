@@ -12,5 +12,6 @@ namespace Group.Infrastructure.Service
         Task DeleteAsync(Core.Domain.Group group);
         Task<Core.Domain.Group> GetByIdAsync(Guid id);
         Task<List<User>> GeMembersAsync(Guid id);
+        Task AddMember(Core.Domain.Group group, User user);
     }
 }

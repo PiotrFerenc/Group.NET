@@ -7,7 +7,15 @@ namespace Group.Infrastructure.Service
 {
     public class GroupService : IGroupService
     {
-        public Task AddAsync(Core.Domain.Group @group)
+      /// <summary>
+      /// nazwa wymagana 5-50 znaków
+      /// admin wymagany
+      /// -
+      /// </summary>
+      /// <param name="group"></param>
+      /// <returns></returns>
+      /// <exception cref="NotImplementedException"></exception>
+      public Task AddAsync(Core.Domain.Group @group)
         {
             throw new NotImplementedException();
         }
@@ -28,6 +36,11 @@ namespace Group.Infrastructure.Service
         }
 
         public Task<List<User>> GeMembersAsync(Guid id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task AddMember(Core.Domain.Group @group, User user)
         {
             throw new NotImplementedException();
         }
